@@ -1,0 +1,11 @@
+.bzr*
+.moc
+.obj
+.pch
+.qmake.cache
+Makefile*
+pkg/
+*.pro.cache
+*.pri
+*.prl
+.svn

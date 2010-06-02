@@ -1,0 +1,60 @@
+===========
+FileManager
+===========
+
+This is a simple file manager application for Qtopia. It is aimed
+at developers and power users who want something similar like
+FExplorer on Symbian S60. Use with caution, because of the low-level
+nature of the application it is possible to corrupt your qtopia image.
+
+
+Install and test
+================
+
+For the x86 emulator (QVFb) you have to start the emulator first:
+
+	$ $QPE_X86_BUILDDIR/bin/runqtopia
+
+Then build and run the project in the emulator:
+
+	$ $QPE_X86_BUILDDIR/bin/qtopiamake
+	$ make
+	$ make install
+	$ ./filemanager
+
+To build a package for the greenphone (physical device) use the following steps:
+
+	$ $QPE_GP_BUILDDIR/bin/qtopiamake
+	$ make
+	$ make package
+	$ $QPE_GP_BUILDDIR/scripts/greenphone-sdk/scripts/gph -i    
+
+Or to include FileManager in the flash image do that:
+
+	$ $QPE_GP_BUILDDIR/bin/qtopiamake
+	$ make
+	$ make install
+	
+The next steps depend on wether you want to create a Qtopia package
+or include FileManager into a flash image, please refer to the
+current Qtopia documentation on how to do that.
+
+
+Authors
+=======
+
+Dominik Holland <dominik.holland@trolltech.com>
+Sascha Peilicke <sascha.peilicke@trolltech.com>
+
+
+License
+=======
+
+Copyright (C) 2007-2008 TROLLTECH ASA. All rights reserved.
+
+This file is part of the Phone Edition of the Qtopia Toolkit.
+
+$TROLLTECH_DUAL_LICENSE$
+
+This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.

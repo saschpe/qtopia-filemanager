@@ -1,0 +1,12 @@
+[Translation]
+File=filemanager-nct
+Context=FileManager
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+
+[Desktop Entry]
+Comment[]=A File Manager
+Exec=filemanager
+Icon=filemanager/FileManager
+Type=Application
+Name[]=FileManager
+
